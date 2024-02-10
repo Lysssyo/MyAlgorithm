@@ -46,19 +46,19 @@
 >  >
 >  > 非线性结构：树形结构、图形结构
 >
->   <img src="Data Structures & Algorithm.assets\image-20230904164302159.png" alt="image-20230904164302159" style="zoom:80%;" />
+>   <img src="DataStructuresAlgorithm.assets\image-20230904164302159.png" alt="image-20230904164302159" style="zoom:80%;" />
 >
 >  - 存储结构
 >
 >   数据元素以及它们之间的关系在计算机中的存储方式
 >
->   <img src="Data Structures & Algorithm.assets\image-20230904164434660.png" alt="image-20230904164434660" style="zoom:80%;" />
+>   <img src="DataStructuresAlgorithm.assets\image-20230904164434660.png" alt="image-20230904164434660" style="zoom:80%;" />
 
 
 
 Eg：
 
-![image-20230904163351169](Data Structures & Algorithm.assets\image-20230904163351169.png)
+![image-20230904163351169](DataStructuresAlgorithm.assets\image-20230904163351169.png)
 
 - 学号、姓名、性别、籍贯为4个**数据项**
 - 每一行（一条学生记录）为一个**数据元素**
@@ -130,7 +130,7 @@ Eg：
 
 Eg：求两个n×n矩阵的乘积
 
-<img src="Data Structures & Algorithm.assets\image-20230905084348970.png" alt="image-20230905084348970" style="zoom:80%;" />
+<img src="DataStructuresAlgorithm.assets\image-20230905084348970.png" alt="image-20230905084348970" style="zoom:80%;" />
 
 > 第一行`for(int i = 1; i <= n; i++)`执行了（n+1）次，因为从i=1开始执行，执行n次后，i等于n+1，此时会回到第一行，判断i是否≤n，所以第一行一共执行了（n+1）次
 >
@@ -144,23 +144,23 @@ Eg：求两个n×n矩阵的乘积
 
 下面具体计算本题的时间复杂度：
 
-<img src="Data Structures & Algorithm.assets\image-20230905085759929.png" alt="image-20230905085759929" style="zoom:80%;" />
+<img src="DataStructuresAlgorithm.assets\image-20230905085759929.png" alt="image-20230905085759929" style="zoom:80%;" />
 
 
 
-![image-20230905085911253](Data Structures & Algorithm.assets\image-20230905085911253.png)
+![image-20230905085911253](DataStructuresAlgorithm.assets\image-20230905085911253.png)
 
 > 通常用常见函数的增长趋势来表达一般算法的渐进复杂度
 
 More Examples：
 
-<img src="Data Structures & Algorithm.assets\image-20230905090255606.png" alt="image-20230905090255606" style="zoom:80%;" />
+<img src="DataStructuresAlgorithm.assets\image-20230905090255606.png" alt="image-20230905090255606" style="zoom:80%;" />
 
 > 例1语句执行的次数与问题的规模没有关系，是一个确定的常数10000次
 >
 > 例2语句执行的次数与问题的规模有关系，且f(n)=n+1
 
-<img src="Data Structures & Algorithm.assets\image-20230905091146282.png" alt="image-20230905091146282" style="zoom:80%;" />
+<img src="DataStructuresAlgorithm.assets\image-20230905091146282.png" alt="image-20230905091146282" style="zoom:80%;" />
 
 
 
@@ -170,7 +170,7 @@ More Examples：
 
 #### 最好、最坏和平均时间复杂度
 
-<img src="Data Structures & Algorithm.assets\image-20230905091713924.png" alt="image-20230905091713924" style="zoom:80%;" />
+<img src="DataStructuresAlgorithm.assets\image-20230905091713924.png" alt="image-20230905091713924" style="zoom:80%;" />
 
 ### 1.5 空间复杂度
 
@@ -178,7 +178,7 @@ More Examples：
 
 ​		记作：S(n)=O(f(n))，其中n为问题的规模
 
-<img src="Data Structures & Algorithm.assets\image-20230905092300214.png" alt="image-20230905092300214" style="zoom:80%;" />
+<img src="DataStructuresAlgorithm.assets\image-20230905092300214.png" alt="image-20230905092300214" style="zoom:80%;" />
 
 > 只需要关注算法所需的临时存储空间的个数
 
@@ -197,7 +197,7 @@ More Examples：
 
 ​		线性表是由n个**类型相同**的**数据元素**组成的**有限**序列记为(a1，a2，a3...an)
 
-​		<img src="Data Structures & Algorithm.assets\image-20230910121028846.png" alt="image-20230910121028846" style="zoom:67%;" />
+​		<img src="DataStructuresAlgorithm.assets\image-20230910121028846.png" alt="image-20230910121028846" style="zoom:67%;" />
 
 > 线性表长度：线性表中元素的个数n( n ≥ 0 )
 >
@@ -207,7 +207,7 @@ More Examples：
 
 - 顺序存储 （顺序表）：逻辑上相邻，物理上也相邻
 
-<img src="Data Structures & Algorithm.assets\image-20230910121406231.png" alt="image-20230910121406231" style="zoom:67%;" />
+<img src="DataStructuresAlgorithm.assets\image-20230910121406231.png" alt="image-20230910121406231" style="zoom:67%;" />
 
 > 顺序表要占用一片连续的存储空间。
 
@@ -285,7 +285,7 @@ int LocateElem(SqList L,ElemType e){
 
 ​		在顺序表的第i个位置插入一个新的数据元素e使长度为n的顺序表变成为长度为n+1的顺序表。
 
-<img src="Data Structures & Algorithm.assets\image-20230910152734062.png" alt="image-20230910152734062" style="zoom:67%;" />
+<img src="DataStructuresAlgorithm.assets\image-20230910152734062.png" alt="image-20230910152734062" style="zoom:67%;" />
 
 插在第 4个数据元素之前，移动 6-4 +1次
 
@@ -311,15 +311,15 @@ bool ListInsert(SqList & L,int i,ElemType e){
 >
 > 要考虑在任意位置插入（共n+1种可能）的平均移动次数
 >
-> <img src="Data Structures & Algorithm.assets\image-20230910154151907.png" alt="image-20230910154151907" style="zoom:67%;" />
+> <img src="DataStructuresAlgorithm.assets\image-20230910154151907.png" alt="image-20230910154151907" style="zoom:67%;" />
 >
-> <img src="Data Structures & Algorithm.assets\image-20230910155655223.png" alt="image-20230910155655223" style="zoom:67%;" />
+> <img src="DataStructuresAlgorithm.assets\image-20230910155655223.png" alt="image-20230910155655223" style="zoom:67%;" />
 
 #### 删除
 
 ​		删除顺序表第 i 个位置上的数据元素使长度为 n 的顺序表变为长度为 n-1 的顺序表
 
-<img src="Data Structures & Algorithm.assets\image-20230910154340280.png" alt="image-20230910154340280" style="zoom:67%;" />
+<img src="DataStructuresAlgorithm.assets\image-20230910154340280.png" alt="image-20230910154340280" style="zoom:67%;" />
 
 删除第 4 个数据元素，移动 6 - 4 次
 
@@ -342,9 +342,9 @@ bool ListDelete(SqList& L,int i){//删除第i个元素
 >
 > 要考虑在任意位置删除（共n种可能）的平均移动次数
 >
-> <img src="Data Structures & Algorithm.assets\image-20230910155548396.png" alt="image-20230910155548396" style="zoom:67%;" />
+> <img src="DataStructuresAlgorithm.assets\image-20230910155548396.png" alt="image-20230910155548396" style="zoom:67%;" />
 >
-> <img src="Data Structures & Algorithm.assets\image-20230910155648885.png" alt="image-20230910155648885" style="zoom:67%;" />
+> <img src="DataStructuresAlgorithm.assets\image-20230910155648885.png" alt="image-20230910155648885" style="zoom:67%;" />
 
 Eg：已知一个长度为n的顺序表L，请写算法将表中所有值为item的数据元素进行删除，要求算法的时间复杂度为0(n)、空间复杂度为0(1)
 
@@ -365,7 +365,7 @@ void Delete(SqList & L,int item){
 
 ​		线性表中的数据元素存储在任意存储单元中。
 
-<img src="Data Structures & Algorithm.assets\image-20230912092719745.png" alt="image-20230912092719745" style="zoom:67%;" />
+<img src="DataStructuresAlgorithm.assets\image-20230912092719745.png" alt="image-20230912092719745" style="zoom:67%;" />
 
 - 结点：数据元素的存储映像。由数据域和指针域两部分组成
 - 链表： n 个结点组成一个链表，是线性表的链式存储结构
@@ -389,7 +389,7 @@ typedef struct LNode {
 
 Eg：
 
-<img src="Data Structures & Algorithm.assets\image-20230912095757217.png" alt="image-20230912095757217" style="zoom:67%;" />
+<img src="DataStructuresAlgorithm.assets\image-20230912095757217.png" alt="image-20230912095757217" style="zoom:67%;" />
 
 > ​		首元结点是指链表中存储第一个数据元素的结点。
 >
@@ -485,7 +485,7 @@ bool GetElem(LinkList L,int i,int& e) {
 }
 ```
 
-> <img src="Data Structures & Algorithm.assets\image-20230913201739348.png" alt="image-20230913201739348" style="zoom:80%;" />
+> <img src="DataStructuresAlgorithm.assets\image-20230913201739348.png" alt="image-20230913201739348" style="zoom:80%;" />
 >
 > T(n)=O(n)
 
@@ -505,7 +505,7 @@ LNode* LocateElem(LinkList L, int e) {
 }
 ```
 
-><img src="Data Structures & Algorithm.assets\image-20230913201739348.png" alt="image-20230913201739348" style="zoom:80%;" />
+><img src="DataStructuresAlgorithm.assets\image-20230913201739348.png" alt="image-20230913201739348" style="zoom:80%;" />
 >
 >T(n)=O(n)
 
@@ -515,7 +515,7 @@ LNode* LocateElem(LinkList L, int e) {
 
 ​		将新的数据元素插入到第i个数据元素之前
 
-<img src="Data Structures & Algorithm.assets\image-20230913203445582.png" alt="image-20230913203445582" style="zoom:80%;" />
+<img src="DataStructuresAlgorithm.assets\image-20230913203445582.png" alt="image-20230913203445582" style="zoom:80%;" />
 
 ```c++
 bool ListInsert(LinkList& L, int i, int e) {
@@ -583,7 +583,7 @@ bool ListInsertArr(int arr[], int n, LinkList& L) {
 
 
 
-<img src="Data Structures & Algorithm.assets\image-20230914105217836.png" alt="image-20230914105217836" style="zoom:67%;" />
+<img src="DataStructuresAlgorithm.assets\image-20230914105217836.png" alt="image-20230914105217836" style="zoom:67%;" />
 
 
 
@@ -612,7 +612,7 @@ typedef struct DuLNode {
 
 ### 2.8 顺序表与链表的比较
 
-<img src="Data Structures & Algorithm.assets\image-20230914105352819.png" alt="image-20230914105352819" style="zoom:67%;" />
+<img src="DataStructuresAlgorithm.assets\image-20230914105352819.png" alt="image-20230914105352819" style="zoom:67%;" />
 
 
 
@@ -658,9 +658,9 @@ typedef struct DuLNode {
 
 ### 3.2 栈抽象数据类型定义
 
-<img src="Data Structures & Algorithm.assets\image-20230919202334376.png" alt="image-20230919202334376" style="zoom:67%;" />
+<img src="DataStructuresAlgorithm.assets\image-20230919202334376.png" alt="image-20230919202334376" style="zoom:67%;" />
 
-> <img src="Data Structures & Algorithm.assets\image-20230919205310598.png" alt="image-20230919205310598" style="zoom:67%;" />
+> <img src="DataStructuresAlgorithm.assets\image-20230919205310598.png" alt="image-20230919205310598" style="zoom:67%;" />
 
 
 
@@ -744,7 +744,7 @@ bool Pop(SqStack& S, SElemType& e) {
 
 #### 链栈的表示
 
-![image-20231017164438468](Data Structures & Algorithm.assets\image-20231017164438468.png)
+![image-20231017164438468](DataStructuresAlgorithm.assets\image-20231017164438468.png)
 
 > 注意链栈中指针的方向——栈顶指向栈底
 
@@ -803,7 +803,7 @@ int Pop(LinkStack& S, SElemType& e) {
 
 ### 3.4 队列的基本操作
 
-<img src="Data Structures & Algorithm.assets\image-20230922113348432.png" alt="image-20230922113348432" style="zoom:67%;" />
+<img src="DataStructuresAlgorithm.assets\image-20230922113348432.png" alt="image-20230922113348432" style="zoom:67%;" />
 
 #### 顺序队列的表示
 
@@ -878,7 +878,7 @@ typedef struct {
 
 > 链队列中，每一个节点用`QNode`表示，每一个`QNode`节点均有一个数据域和指针域。对于整个链队列，还有一个头指针`front`和一个尾指针`rear`，这两个指针用LinkQueue封装。
 
-<img src="Data Structures & Algorithm.assets\image-20230923101351716.png" alt="image-20230923101351716" style="zoom:67%;" />
+<img src="DataStructuresAlgorithm.assets\image-20230923101351716.png" alt="image-20230923101351716" style="zoom:67%;" />
 
 #### 链队列的初始化
 
@@ -906,7 +906,7 @@ bool DestroyQueue(LinkQueue& Q) {
 
 #### 链队列入队
 
-<img src="Data Structures & Algorithm.assets\image-20230923103515741.png" alt="image-20230923103515741" style="zoom:67%;" />
+<img src="DataStructuresAlgorithm.assets\image-20230923103515741.png" alt="image-20230923103515741" style="zoom:67%;" />
 
 ```c++
 bool EnQueue(LinkQueue& Q, QElemType e) {
@@ -922,7 +922,7 @@ bool EnQueue(LinkQueue& Q, QElemType e) {
 
 #### 链队列出队
 
-<img src="Data Structures & Algorithm.assets\image-20230923104242129.png" alt="image-20230923104242129" style="zoom:67%;" />
+<img src="DataStructuresAlgorithm.assets\image-20230923104242129.png" alt="image-20230923104242129" style="zoom:67%;" />
 
 ```c++
 bool DeQueue(LinkQueue& Q, QElemType& e) {
@@ -951,7 +951,7 @@ bool DeQueue(LinkQueue& Q, QElemType& e) {
   - 有且仅有一个特定的称为根(Root) 的结点
   - 其余结点可分为 m (m≥0) 个互不相交的有限集 T1, T2, T3,....Tm，其中每一个集合本身又是一棵树，并称为根的子树(SubTree)。
 
-<img src="Data Structures & Algorithm.assets\image-20231017151147943.png" alt="image-20231017151147943" style="zoom:87%;" />
+<img src="DataStructuresAlgorithm.assets\image-20231017151147943.png" alt="image-20231017151147943" style="zoom:87%;" />
 
 
 
@@ -977,7 +977,7 @@ bool DeQueue(LinkQueue& Q, QElemType& e) {
 - 祖先：从根节点到该节点所经分支上的所有节点
 - 子孙：以该节点为根的子树的任意节点
 
-![image-20231017152843647](Data Structures & Algorithm.assets\image-20231017152843647.png)
+![image-20231017152843647](DataStructuresAlgorithm.assets\image-20231017152843647.png)
 
 
 
@@ -1049,7 +1049,7 @@ More：
 
 应时，称之为完全二叉树。
 
-![image-20231018185348584](Data Structures & Algorithm.assets\image-20231018185348584.png)
+![image-20231018185348584](DataStructuresAlgorithm.assets\image-20231018185348584.png)
 
 > 满二叉树一定是完全二叉树
 
@@ -1063,7 +1063,7 @@ More：
 
 性质3：对任何一棵二叉树T如果其叶子数为 n0，度为2的结点数为 n2，则 n0= n2+ 1
 
-<img src="Data Structures & Algorithm.assets\image-20231018190005739.png" alt="image-20231018190005739" style="zoom:80%;" />
+<img src="DataStructuresAlgorithm.assets\image-20231018190005739.png" alt="image-20231018190005739" style="zoom:80%;" />
 
 > 性质4表明了完全二叉树结点数n与完全二叉树深度k之间的关系
 
@@ -1084,7 +1084,7 @@ More：
 
 ​	按满二叉树的结点层次编号，依次存放二叉树中的数据元素。
 
-![image-20231018193129656](Data Structures & Algorithm.assets\image-20231018193129656.png)
+![image-20231018193129656](DataStructuresAlgorithm.assets\image-20231018193129656.png)
 
 ```c++
 //二叉树顺序存储表示
@@ -1098,7 +1098,7 @@ SqBiTree bt;
 
 最坏情况：深度为k的且只有k个结点的单支树需要长度为2^k-1的一维数组
 
-<img src="Data Structures & Algorithm.assets\image-20231018193453516.png" alt="image-20231018193453516" style="zoom:67%;" />
+<img src="DataStructuresAlgorithm.assets\image-20231018193453516.png" alt="image-20231018193453516" style="zoom:67%;" />
 
 > 存储这个树至少需要一个长度为7的一维数组：
 >
@@ -1110,7 +1110,7 @@ SqBiTree bt;
 
 ##### 二叉链表
 
-<img src="Data Structures & Algorithm.assets\image-20231018201602220.png" alt="image-20231018201602220" style="zoom:80%;" />
+<img src="DataStructuresAlgorithm.assets\image-20231018201602220.png" alt="image-20231018201602220" style="zoom:80%;" />
 
 ```c++
 typedef struct BiTNode {
@@ -1129,7 +1129,7 @@ typedef struct BiTNode {
 
 ##### 三叉链表
 
-<img src="Data Structures & Algorithm.assets\image-20231018203246016.png" alt="image-20231018203246016" style="zoom:67%;" />
+<img src="DataStructuresAlgorithm.assets\image-20231018203246016.png" alt="image-20231018203246016" style="zoom:67%;" />
 
 ```c++
 typedef struct TriTNode {
@@ -1157,7 +1157,7 @@ typedef struct TriTNode {
 - LDR——中（根）序遍历
 - LRD——后（根）序遍历
 
-<img src="Data Structures & Algorithm.assets\image-20231019143105010.png" alt="image-20231019143105010" style="zoom:80%;" />
+<img src="DataStructuresAlgorithm.assets\image-20231019143105010.png" alt="image-20231019143105010" style="zoom:80%;" />
 
 > 递归的操作
 
@@ -1173,7 +1173,7 @@ typedef struct TriTNode {
 
 - 已知先序和中序
 
-<img src="Data Structures & Algorithm.assets\image-20231019151137167.png" alt="image-20231019151137167" style="zoom:80%;" />
+<img src="DataStructuresAlgorithm.assets\image-20231019151137167.png" alt="image-20231019151137167" style="zoom:80%;" />
 
 ​									2、再对左子树CDBFE做出同样的操作，找到左子树CDBFE的根为B，B的左边是CD，B的右边是FE······
 
@@ -1224,7 +1224,7 @@ int PostOrderTraverse(BiTree T) {
 
 > 不难看出，如果去掉输出语句，从递归的角度看，三种算法是完全相同的，或说这三种算法的访问路径是相同的，只是访问结点的时机不同
 
-<img src="Data Structures & Algorithm.assets\image-20231019160154445.png" alt="image-20231019160154445" style="zoom:67%;" />
+<img src="DataStructuresAlgorithm.assets\image-20231019160154445.png" alt="image-20231019160154445" style="zoom:67%;" />
 
 > 从虚线的出发点到终点的路径上，每个结点经过3次。
 >
@@ -1425,7 +1425,7 @@ int LeafCount(BiTree T) {
 
 Example：
 
-![image-20231020160957910](Data Structures & Algorithm.assets\image-20231020160957910.png)
+![image-20231020160957910](DataStructuresAlgorithm.assets\image-20231020160957910.png)
 
 ​		为区分`Irchid`和`rchild`指针到底是指向孩子的指针，还是指向前驱或后继的指针，对二叉链表中每个结点增设两个标志域 ltag 和 rtag ，并约定：
 
@@ -1446,7 +1446,7 @@ typedef struct BiThrNode {
 
 **先序线索二叉树**
 
-![image-20231020162853296](Data Structures & Algorithm.assets\image-20231020162853296.png)
+![image-20231020162853296](DataStructuresAlgorithm.assets\image-20231020162853296.png)
 
 > 中序、后序同理
 
@@ -1454,7 +1454,7 @@ typedef struct BiThrNode {
 
 ​	上图存储E的结点的右孩子为空，但在序列中他是最后一个元素，没有后继结点，那么E的rchild就空了。为了避免这种指针悬空的情况，增设了一个头结点，这个头结点的ltag=0，Ichild指向根结点rtag=1，rchild指向遍历序列中最后一个结点遍历序列中第一个结点的lc域和最后一个结点的rc域都指向头结点
 
-<img src="Data Structures & Algorithm.assets\image-20231020162813536.png" alt="image-20231020162813536" style="zoom:67%;" />
+<img src="DataStructuresAlgorithm.assets\image-20231020162813536.png" alt="image-20231020162813536" style="zoom:67%;" />
 
 
 
@@ -1470,7 +1470,7 @@ typedef struct BiThrNode {
 
 > 特点：找双亲容易找孩子难
 
-<img src="Data Structures & Algorithm.assets\image-20231026143427959.png" alt="image-20231026143427959" style="zoom:67%;" />
+<img src="DataStructuresAlgorithm.assets\image-20231026143427959.png" alt="image-20231026143427959" style="zoom:67%;" />
 
 ```c++
 typedef struct PTNode {
@@ -1492,7 +1492,7 @@ typedef struct {
 
 则n个结点有n个孩子链表(叶子的孩子链表为空表)。而n个头指针又组成一个线性表，用顺序表（含n个元素的结构数组）存储。
 
-![image-20231026144144930](Data Structures & Algorithm.assets\image-20231026144144930.png)
+![image-20231026144144930](DataStructuresAlgorithm.assets\image-20231026144144930.png)
 
 > 找孩子容易，找双亲难
 
@@ -1519,7 +1519,7 @@ typedef struct {
 
 #### 带双亲的孩子链表
 
-![image-20231026144740827](Data Structures & Algorithm.assets\image-20231026144740827.png)
+![image-20231026144740827](DataStructuresAlgorithm.assets\image-20231026144740827.png)
 
 > 在孩子链表的`CTNode`的定义中加上`int parent;`即可
 
@@ -1531,7 +1531,7 @@ typedef struct {
 
 实现：用二又链表作树的存储结构，链表中每个结点的两个指针域分别指向其第一个孩子结点和下一个兄弟结点
 
-![image-20231026145820222](Data Structures & Algorithm.assets\image-20231026145820222.png)
+![image-20231026145820222](DataStructuresAlgorithm.assets\image-20231026145820222.png)
 
 > 找双亲困难
 
@@ -1549,7 +1549,7 @@ typedef struct {
 - 将树转化为二叉树进行处理，利用二叉树的算法来实现对树的操作
 - 由树和二叉树都可以用二又链表作存储结构，则以二叉链表作媒介可以导出树与二叉树之间的一个对应关系
 
-![image-20231026151818586](Data Structures & Algorithm.assets\image-20231026151818586.png)
+![image-20231026151818586](DataStructuresAlgorithm.assets\image-20231026151818586.png)
 
 
 
@@ -1569,7 +1569,7 @@ typedef struct {
 2. 将每棵树的根结点用线相连
 3. 以第一棵树根结点为二叉树的根，再以根结点为轴心，顺时针旋转构成二叉树型结构
 
-![image-20231026152513154](Data Structures & Algorithm.assets\image-20231026152513154.png)
+![image-20231026152513154](DataStructuresAlgorithm.assets\image-20231026152513154.png)
 
 
 
@@ -1634,7 +1634,7 @@ typedef struct {
 
 例如：
 
-<img src="Data Structures & Algorithm.assets\image-20231030002822268.png" alt="image-20231030002822268" style="zoom:50%;" />
+<img src="DataStructuresAlgorithm.assets\image-20231030002822268.png" alt="image-20231030002822268" style="zoom:50%;" />
 
 ​		TL(b)=0+1+1+2+2+2+2+3+3=16，该树为完全二叉树，所以它是路径长度最短的二叉树。但是，当H、I接在E上时，树也是路径长度最短的树，但不是完全二叉树。
 
@@ -1650,7 +1650,7 @@ typedef struct {
 
 树中所有**叶子结点**的带权路径长度之和。
 
-记作：<img src="Data Structures & Algorithm.assets\image-20231030003155003.png" alt="image-20231030003155003" style="zoom:50%;" />
+记作：<img src="DataStructuresAlgorithm.assets\image-20231030003155003.png" alt="image-20231030003155003" style="zoom:50%;" />
 
 WPL(Weighted Path Length)
 
@@ -1671,7 +1671,7 @@ WPL(Weighted Path Length)
 
 ​	例如：a、b、c、d四个叶子结点的权分别为7，5，2，4。构造最优二叉树
 
-①<img src="Data Structures & Algorithm.assets\image-20231030003807069.png" alt="image-20231030003807069" style="zoom:40%;" />			②<img src="Data Structures & Algorithm.assets\image-20231030003851089.png" alt="image-20231030003851089" style="zoom:40%;" />		③<img src="Data Structures & Algorithm.assets\image-20231030003948583.png" alt="image-20231030003948583" style="zoom:40%;" />
+①<img src="DataStructuresAlgorithm.assets\image-20231030003807069.png" alt="image-20231030003807069" style="zoom:40%;" />			②<img src="DataStructuresAlgorithm.assets\image-20231030003851089.png" alt="image-20231030003851089" style="zoom:40%;" />		③<img src="DataStructuresAlgorithm.assets\image-20231030003948583.png" alt="image-20231030003948583" style="zoom:40%;" />
 
 WPL1=2 * 7+2 * 5+2 * 2+2 * 4=36
 
@@ -1797,7 +1797,7 @@ void Select(HuffmanTree HT,int n,int &s1,int &s2) {
 
 例如：有n=8，权值为W={7，19，2，6，32，3，21，10}；构造哈夫曼树
 
-​	<img src="Data Structures & Algorithm.assets\image-20231031131912392.png" alt="image-20231031131912392" style="zoom:80%;" />						<img src="Data Structures & Algorithm.assets\image-20231031131939698.png" alt="image-20231031131939698" style="zoom:80%;" />
+​	<img src="DataStructuresAlgorithm.assets\image-20231031131912392.png" alt="image-20231031131912392" style="zoom:80%;" />						<img src="DataStructuresAlgorithm.assets\image-20231031131939698.png" alt="image-20231031131939698" style="zoom:80%;" />
 
 
 
@@ -1825,7 +1825,7 @@ void Select(HuffmanTree HT,int n,int &s1,int &s2) {
 2、利用哈夫曼树的特点：权越大的叶子离根越近；将每个字符的概率值作为权值，构造哈夫曼树。 则概率越大的结点，路径越短
 3、在哈夫曼树的每个分支上标上0或1：结点的左分支标0，右分支 1，把从根到每个叶子的路径上的标号连接起来，作为该叶子代表的字符的编码
 
-<img src="Data Structures & Algorithm.assets\image-20231031132718464.png" alt="image-20231031132718464" style="zoom:80%;" />
+<img src="DataStructuresAlgorithm.assets\image-20231031132718464.png" alt="image-20231031132718464" style="zoom:80%;" />
 
 > 问题一：为什么哈夫曼编码能够保证是前缀编码?
 >
@@ -1837,7 +1837,7 @@ void Select(HuffmanTree HT,int n,int &s1,int &s2) {
 
 ​		**哈夫曼编码是最优前缀码**
 
-![image-20231118164328426](Data Structures & Algorithm.assets/image-20231118164328426.png)
+![image-20231118164328426](DataStructuresAlgorithm.assets/image-20231118164328426.png)
 
 ```c++
 //哈夫曼编码算法实现
@@ -1959,7 +1959,7 @@ G=(V,E)，其中V是顶点（数据元素）的有穷**非空**集合，E是边�
 
   除路径起点和终点相同外，其余顶点均不相同的路径
 
-  ![image-20231101185512501](Data Structures & Algorithm.assets\image-20231101185512501.png)
+  ![image-20231101185512501](DataStructuresAlgorithm.assets\image-20231101185512501.png)
 
 - 连通图 （强连通图）
 
@@ -1975,7 +1975,7 @@ G=(V,E)，其中V是顶点（数据元素）的有穷**非空**集合，E是边�
 
   
 
-  ![image-20231101185749481](Data Structures & Algorithm.assets\image-20231101185749481.png)						![image-20231101185805293](Data Structures & Algorithm.assets\image-20231101185805293.png)
+  ![image-20231101185749481](DataStructuresAlgorithm.assets\image-20231101185749481.png)						![image-20231101185805293](DataStructuresAlgorithm.assets\image-20231101185805293.png)
 
   
 
@@ -1985,11 +1985,11 @@ G=(V,E)，其中V是顶点（数据元素）的有穷**非空**集合，E是边�
 
 ​		建立一个顶点表 （记录各个顶点信息)和一个邻接矩阵（表示各个顶点之间关系）
 
-![image-20231101190225029](Data Structures & Algorithm.assets\image-20231101190225029.png)
+![image-20231101190225029](DataStructuresAlgorithm.assets\image-20231101190225029.png)
 
 - 无向图
 
-![image-20231101190501091](Data Structures & Algorithm.assets\image-20231101190501091.png)
+![image-20231101190501091](DataStructuresAlgorithm.assets\image-20231101190501091.png)
 
 > 1. 无向图的邻接矩阵是对称的
 > 2. 顶点i的度=第i行（列）中1的个数
@@ -2000,7 +2000,7 @@ G=(V,E)，其中V是顶点（数据元素）的有穷**非空**集合，E是边�
 
 - 有向图
 
-![image-20231101190853017](Data Structures & Algorithm.assets\image-20231101190853017.png)
+![image-20231101190853017](DataStructuresAlgorithm.assets\image-20231101190853017.png)
 
 > 有向图的邻接矩阵可能不是对称的
 >
@@ -2014,7 +2014,7 @@ G=(V,E)，其中V是顶点（数据元素）的有穷**非空**集合，E是边�
 
 - 网
 
-![image-20231101191347652](Data Structures & Algorithm.assets\image-20231101191347652.png)
+![image-20231101191347652](DataStructuresAlgorithm.assets\image-20231101191347652.png)
 
 
 
@@ -2110,23 +2110,23 @@ bool CreateUDN(AMGraph& G) {
 
 ​		有向网、无向图、有向图类似
 
-![image-20231101193843403](Data Structures & Algorithm.assets\image-20231101193843403.png)
+![image-20231101193843403](DataStructuresAlgorithm.assets\image-20231101193843403.png)
 
 
 
 #### 邻接表表示法（链式）
 
-![image-20231101194534027](Data Structures & Algorithm.assets\image-20231101194534027.png)
+![image-20231101194534027](DataStructuresAlgorithm.assets\image-20231101194534027.png)
 
 
 
-​						![image-20231101194641766](Data Structures & Algorithm.assets\image-20231101194641766.png)								![image-20231101194659856](Data Structures & Algorithm.assets\image-20231101194659856.png)
+​						![image-20231101194641766](DataStructuresAlgorithm.assets\image-20231101194641766.png)								![image-20231101194659856](DataStructuresAlgorithm.assets\image-20231101194659856.png)
 
 > 如果边有权的话表结点就多一个info域用于存储权值
 
 - 无向图
 
-![image-20231101194929921](Data Structures & Algorithm.assets\image-20231101194929921.png)
+![image-20231101194929921](DataStructuresAlgorithm.assets\image-20231101194929921.png)
 
 特点：
 
@@ -2138,7 +2138,7 @@ bool CreateUDN(AMGraph& G) {
 
 - 有向图
 
-![image-20231101195204529](Data Structures & Algorithm.assets\image-20231101195204529.png)
+![image-20231101195204529](DataStructuresAlgorithm.assets\image-20231101195204529.png)
 
 
 
@@ -2248,7 +2248,7 @@ bool CreateUDG(ALGraph& G) {
 
 #### 邻接表与邻接矩阵的区别与联系
 
-![image-20231102131107826](Data Structures & Algorithm.assets\image-20231102131107826.png)
+![image-20231102131107826](DataStructuresAlgorithm.assets\image-20231102131107826.png)
 
 联系：邻接表中每个链表对应于邻接矩阵中的一行，链表中结点个数等于一行中非零元素的个数。
 
@@ -2267,13 +2267,13 @@ bool CreateUDG(ALGraph& G) {
 ​		十字链表(Orthogonal List)是有向图的另一种链式存储结构。我们也可以把它看成是将有向图的邻接表和逆邻接表结合起来形成的一种链表。
 ​		有向图中的每一条弧对应十字链表中的一个弧结点，同时有向图中的每个顶点在十字链表中对应有一个结点，叫做顶点结点。
 
-![image-20231102162028369](Data Structures & Algorithm.assets\image-20231102162028369.png)
+![image-20231102162028369](DataStructuresAlgorithm.assets\image-20231102162028369.png)
 
 
 
 #### 邻接多重表
 
-![image-20231102163516565](Data Structures & Algorithm.assets\image-20231102163516565.png)
+![image-20231102163516565](DataStructuresAlgorithm.assets\image-20231102163516565.png)
 
 
 
@@ -2392,7 +2392,7 @@ DFS算法分析：
 
 ​		重复此过程，直至所有顶点均被访问为止。
 
-![image-20231103185523017](Data Structures & Algorithm.assets\image-20231103185523017.png)
+![image-20231103185523017](DataStructuresAlgorithm.assets\image-20231103185523017.png)
 
 遍历次序：a	c	d	e	f	h	k	b	g
 
@@ -2483,7 +2483,7 @@ void BreadthFirstSearch(ALGraph& G, int startVertex) {
 
 > 有n个顶点，n-1条边的图不一定是生成树：
 >
->    ![image-20231103192629227](Data Structures & Algorithm.assets\image-20231103192629227.png)
+>    ![image-20231103192629227](DataStructuresAlgorithm.assets\image-20231103192629227.png)
 
 - 在生成树中再加一条边必然形成回路
 - 生成树中任意两个顶点间的路径是唯一的
@@ -2492,17 +2492,17 @@ void BreadthFirstSearch(ALGraph& G, int startVertex) {
 
 - 深度优先生成树
 
-![image-20231104201433885](Data Structures & Algorithm.assets\image-20231104201433885.png)
+![image-20231104201433885](DataStructuresAlgorithm.assets\image-20231104201433885.png)
 
 - 广度优先生成树
 
-![image-20231104201510291](Data Structures & Algorithm.assets\image-20231104201510291.png)
+![image-20231104201510291](DataStructuresAlgorithm.assets\image-20231104201510291.png)
 
 ##### 典型用途
 
 ​		欲在n个城市间建立通信网，则n个城市应铺n-1条线路。但因为每条线路都会有对应的经济成本，而n个城市最多有n(n-1)/2条线路，那么，如何选择n-1条线路，使总费用最少?
 
-![image-20231104201825807](Data Structures & Algorithm.assets\image-20231104201825807.png)
+![image-20231104201825807](DataStructuresAlgorithm.assets\image-20231104201825807.png)
 
 
 
@@ -2518,19 +2518,19 @@ void BreadthFirstSearch(ALGraph& G, int startVertex) {
 
 - 尚未落在生成树上的顶点集： V-U
 
-![image-20231104203321971](Data Structures & Algorithm.assets\image-20231104203321971.png)
+![image-20231104203321971](DataStructuresAlgorithm.assets\image-20231104203321971.png)
 
 
 
 ##### 普里姆(Prim)算法
 
-![image-20231104204014418](Data Structures & Algorithm.assets\image-20231104204014418.png)
+![image-20231104204014418](DataStructuresAlgorithm.assets\image-20231104204014418.png)
 
 
 
-![image-20231107171337616](Data Structures & Algorithm.assets\image-20231107171337616.png)
+![image-20231107171337616](DataStructuresAlgorithm.assets\image-20231107171337616.png)
 
-![image-20231107171503312](Data Structures & Algorithm.assets\image-20231107171503312.png)
+![image-20231107171503312](DataStructuresAlgorithm.assets\image-20231107171503312.png)
 
 ```c++
 //基于邻接矩阵的Prim算法
@@ -2639,13 +2639,13 @@ void myPrim(AMGraph G, lowCost& S) {
 
 ##### 克鲁斯卡尔 (Kruskal) 算法
 
-![image-20231104204422148](Data Structures & Algorithm.assets\image-20231104204422148.png)
+![image-20231104204422148](DataStructuresAlgorithm.assets\image-20231104204422148.png)
 
 
 
 两种算法的比较：
 
-![image-20231104204808384](Data Structures & Algorithm.assets\image-20231104204808384.png)
+![image-20231104204808384](DataStructuresAlgorithm.assets\image-20231104204808384.png)
 
 
 
@@ -2661,13 +2661,13 @@ void myPrim(AMGraph G, lowCost& S) {
 
 ##### Dijlstra算法
 
-![image-20231105234414691](Data Structures & Algorithm.assets\image-20231105234414691.png)
+![image-20231105234414691](DataStructuresAlgorithm.assets\image-20231105234414691.png)
 
-![image-20231105234557329](Data Structures & Algorithm.assets\image-20231105234557329.png)
+![image-20231105234557329](DataStructuresAlgorithm.assets\image-20231105234557329.png)
 
 例如：
 
-![image-20231105234633896](Data Structures & Algorithm.assets\image-20231105234633896.png)
+![image-20231105234633896](DataStructuresAlgorithm.assets\image-20231105234633896.png)
 
 
 
@@ -2675,11 +2675,11 @@ void myPrim(AMGraph G, lowCost& S) {
 
 1. 先列出任意两点的直达路径
 
-![image-20231109194028247](Data Structures & Algorithm.assets\image-20231109194028247.png)
+![image-20231109194028247](DataStructuresAlgorithm.assets\image-20231109194028247.png)
 
 2. 引入第一个结点（以引入1为例）
 
-![image-20231109194127119](Data Structures & Algorithm.assets\image-20231109194127119.png)
+![image-20231109194127119](DataStructuresAlgorithm.assets\image-20231109194127119.png)
 
 ​		引入1之后，表中（3，2）、（4，2）、（4、3）变得更短了，即以1为中转点，可以缩短3-2、4-2、4-3的路径。
 
@@ -2691,19 +2691,19 @@ void myPrim(AMGraph G, lowCost& S) {
 
 ​		对于4到3：原来是11，以2为中介，长度变为7+3=10，变短了。
 
-![image-20231109194656195](Data Structures & Algorithm.assets\image-20231109194656195.png)
+![image-20231109194656195](DataStructuresAlgorithm.assets\image-20231109194656195.png)
 
 > 到这里，最短路径有些是直接到达，有些以1为中介，有些以2为中介，有些以1，2为中介
 
 4. 以此类推，引入所有结点，到最后，最短路径可能是直接到达，也可能有几个中转点
 
-![image-20231109194817215](Data Structures & Algorithm.assets\image-20231109194817215.png)
+![image-20231109194817215](DataStructuresAlgorithm.assets\image-20231109194817215.png)
 
 
 
 #### 拓扑排序
 
-![image-20231108192621329](Data Structures & Algorithm.assets\image-20231108192621329.png)
+![image-20231108192621329](DataStructuresAlgorithm.assets\image-20231108192621329.png)
 
 ​		有向无环图：无环的有向图，简称 DAG图(Directed Acycline Graph)
 
@@ -2737,13 +2737,13 @@ AOE网
 2. 从图中删除该顶点和所有以它为尾的弧
 3. 重复上述两步，直至全部顶点均已输出或者当图中不存在无前驱的顶点为止
 
-![image-20231108192238952](Data Structures & Algorithm.assets\image-20231108192238952.png)
+![image-20231108192238952](DataStructuresAlgorithm.assets\image-20231108192238952.png)
 
 检测AOV网中是否有环：
 
 ​		对有向图构造其顶点的拓扑有序序列，若网中所有顶点都在它的拓扑有序序列中，则该 AOV 网必定不存在环
 
-![image-20231108192419436](Data Structures & Algorithm.assets\image-20231108192419436.png)
+![image-20231108192419436](DataStructuresAlgorithm.assets\image-20231108192419436.png)
 
 ​		该图构造的拓扑有序序列中，没有C3，C5，C7，C6，C8，所以这个网有环
 
@@ -2751,13 +2751,13 @@ AOE网
 
 #### 关键路径
 
-![image-20231108192717018](Data Structures & Algorithm.assets\image-20231108192717018.png)
+![image-20231108192717018](DataStructuresAlgorithm.assets\image-20231108192717018.png)
 
 ​		把工程计划表示为边表示活动的网络，即AOE网，用**顶点表示事件，弧表示活动，弧的权表示活动持续时间。**事件表示在它之前的活动已经完成，在它之后的活动可以开始。
 
 ​		上述工程的AOE网如图所示：
 
-![image-20231108200035466](Data Structures & Algorithm.assets\image-20231108200035466.png)
+![image-20231108200035466](DataStructuresAlgorithm.assets\image-20231108200035466.png)
 
 ​		a1--a9依次表示清空办公室---清扫办公室的活动。
 
@@ -2774,7 +2774,7 @@ AOE网
 (1)事件v的最早发生时间ve(i)
 		进入事件v的每一活动都结束，v才可发生，所以ve(i)是从源点到vi的最长路径长度。求ve(i)的值，可根据拓扑顺序从源点开始向汇点递推。通常将工程的开始顶点事件v0的最早
 
-![image-20231108200751334](Data Structures & Algorithm.assets\image-20231108200751334.png)
+![image-20231108200751334](DataStructuresAlgorithm.assets\image-20231108200751334.png)
 
 > 关键在于假设汇点的最早开始时间和最晚开始时间是一样的，然往前推，才能找到最晚-最早=0的活动，才能找到关键路径
 
@@ -2788,7 +2788,7 @@ AOE网
 
 ### 7.1 知识回顾
 
-![image-20231114150643749](Data Structures & Algorithm.assets/image-20231114150643749.png)
+![image-20231114150643749](DataStructuresAlgorithm.assets/image-20231114150643749.png)
 
 ### 7.2 查找的基本概念
 
@@ -2812,7 +2812,7 @@ AOE网
 
 ​		查找算法的评价指标
 
-​												![image-20231114151103137](Data Structures & Algorithm.assets/image-20231114151103137.png)		（关键字比较次数的期望值)	
+​												![image-20231114151103137](DataStructuresAlgorithm.assets/image-20231114151103137.png)		（关键字比较次数的期望值)	
 
 n：记录的个数
 
@@ -2851,7 +2851,7 @@ typedef struct {
 
 查找表中的某个元素，一般这样写：
 
-![image-20231114152613420](Data Structures & Algorithm.assets/image-20231114152613420.png)
+![image-20231114152613420](DataStructuresAlgorithm.assets/image-20231114152613420.png)
 
 ```c++
 int Search_Seq(SSTable ST, KeyType key) {
@@ -2890,7 +2890,7 @@ int Search_Seq(SSTable ST, KeyType key) {
 }
 ```
 
-![image-20231114152846049](Data Structures & Algorithm.assets/image-20231114152846049.png)
+![image-20231114152846049](DataStructuresAlgorithm.assets/image-20231114152846049.png)
 
 ​		当ST.length较大时，此改进能使进行一次查找所需的平均时间几乎减少一半。
 
@@ -2951,17 +2951,17 @@ int Search_Bin(SSTable ST, KeyType key) {
 
 **性能分析 - 判定树**
 
-例如：![image-20231115192229897](Data Structures & Algorithm.assets/image-20231115192229897.png)
+例如：![image-20231115192229897](DataStructuresAlgorithm.assets/image-20231115192229897.png)
 
 判定树如下：
 
-![image-20231115192251401](Data Structures & Algorithm.assets/image-20231115192251401.png)
+![image-20231115192251401](DataStructuresAlgorithm.assets/image-20231115192251401.png)
 
 对于给定的关键字，首先和6比较，如果比6大，和9比较，如果比9大，和10比较...
 
 
 
-![image-20231115192424759](Data Structures & Algorithm.assets/image-20231115192424759.png)
+![image-20231115192424759](DataStructuresAlgorithm.assets/image-20231115192424759.png)
 
 > - 对于6号结点，找到它仅用比较1次；3号结点，找到它仅用比较2次；7号结点，找它它仅用比较3次；（比较的次数等于结点的层数，也等于路径上的结点数）
 >
@@ -2973,7 +2973,7 @@ int Search_Bin(SSTable ST, KeyType key) {
 
 扩展：
 
-![image-20231115193840001](Data Structures & Algorithm.assets/image-20231115193840001.png)
+![image-20231115193840001](DataStructuresAlgorithm.assets/image-20231115193840001.png)
 
 - 优缺点：
 
@@ -2984,13 +2984,13 @@ int Search_Bin(SSTable ST, KeyType key) {
 
 #### 分块查找
 
-![image-20231115194111325](Data Structures & Algorithm.assets/image-20231115194111325.png)
+![image-20231115194111325](DataStructuresAlgorithm.assets/image-20231115194111325.png)
 
 
 
 #### 查找方法比较
 
-![image-20231115194128626](Data Structures & Algorithm.assets/image-20231115194128626.png)
+![image-20231115194128626](DataStructuresAlgorithm.assets/image-20231115194128626.png)
 
 
 
@@ -3023,7 +3023,7 @@ int Search_Bin(SSTable ST, KeyType key) {
 
 例如，一颗二叉排序树：
 
-![image-20231116112604137](Data Structures & Algorithm.assets/image-20231116112604137.png)
+![image-20231116112604137](DataStructuresAlgorithm.assets/image-20231116112604137.png)
 
 中序遍历二叉排序树：3 12 24 37 45 53 61 78 90 100
 
@@ -3090,7 +3090,7 @@ BSTree SearchBST2(BSTree T, KeyType key) {
 > 比较关键字的次数=此结点所在层次数
 > 最多的比较次数=树的深度
 
-​											![image-20231119154658663](Data Structures & Algorithm.assets/image-20231119154658663.png)  
+​											![image-20231119154658663](DataStructuresAlgorithm.assets/image-20231119154658663.png)  
 
 ​		例如上图，查找35需要比较4次（35在第4层)；
 
@@ -3100,17 +3100,17 @@ BSTree SearchBST2(BSTree T, KeyType key) {
 
 ##### 平均查找长度
 
-![image-20231116114854545](Data Structures & Algorithm.assets/image-20231116114854545.png)
+![image-20231116114854545](DataStructuresAlgorithm.assets/image-20231116114854545.png)
 
 ​		含有 n 个结点的二又排序树的平均查找长度和树的形态有关
 
-![image-20231116115136747](Data Structures & Algorithm.assets/image-20231116115136747.png)
+![image-20231116115136747](DataStructuresAlgorithm.assets/image-20231116115136747.png)
 
 
 
 ##### 插入
 
-![image-20231116123835506](Data Structures & Algorithm.assets/image-20231116123835506.png)
+![image-20231116123835506](DataStructuresAlgorithm.assets/image-20231116123835506.png)
 
 > 插入的元素一定在叶结点上
 
@@ -3157,7 +3157,7 @@ int main() {
 
 ​		可生成二叉排序树如下：
 
-![image-20231116124316574](Data Structures & Algorithm.assets/image-20231116124316574.png)
+![image-20231116124316574](DataStructuresAlgorithm.assets/image-20231116124316574.png)
 
 ​		一个无序序列可通过构造二叉排序树而变成一个有序序列。构造树的过程就是对无序序列进行排序的过程。
 ​		插入的结点均为叶子结点，故无需移动其他结点。相当于在有序序列上插入记录而无需移动其他记录。
@@ -3170,7 +3170,7 @@ int main() {
 
 1. 被删除的结点是叶子结点，直接删去该结点
 
-![image-20231116125252374](Data Structures & Algorithm.assets/image-20231116125252374.png)
+![image-20231116125252374](DataStructuresAlgorithm.assets/image-20231116125252374.png)
 
 2. 被删除的结点只有左子树或者只有右子树，用其左子树或者右子树替它 **(结点替换)** 
 
@@ -3178,11 +3178,11 @@ int main() {
 
 3. 被删除的结点既有左子树，也有右子树，以其中序前趋值替换之 (值替换) ，然后再删除该前趋结点前趋是左子树中最大的结点（或者用其后继替换之，然后再删除该后继结点。后继是右子树中最小的结点。）
 
-![image-20231116125534807](Data Structures & Algorithm.assets/image-20231116125534807.png)
+![image-20231116125534807](DataStructuresAlgorithm.assets/image-20231116125534807.png)
 
-![image-20231116125552813](Data Structures & Algorithm.assets/image-20231116125552813.png)
+![image-20231116125552813](DataStructuresAlgorithm.assets/image-20231116125552813.png)
 
-![image-20231116125610498](Data Structures & Algorithm.assets/image-20231116125610498.png)
+![image-20231116125610498](DataStructuresAlgorithm.assets/image-20231116125610498.png)
 
 ```c++
 void DeleteBST(BSTree& T, int key) {
@@ -3243,7 +3243,7 @@ void DeleteBST(BSTree& T, int key) {
 ​		平衡因子 = 结点左子树的高度 - 结点右子树的高度
 ​		根据平衡二叉树的定义，平衡二又树上所有结点的平衡因子只能是-1、0，或1。
 
-> ![image-20231119205540187](Data Structures & Algorithm.assets/image-20231119205540187.png)
+> ![image-20231119205540187](DataStructuresAlgorithm.assets/image-20231119205540187.png)
 
 
 
@@ -3253,11 +3253,11 @@ void DeleteBST(BSTree& T, int key) {
 
 > 如果在一棵 AVL 树中插入一个新结点后造成失衡，则必须重新调整树的结构，使之恢复平衡。
 
-![image-20231119205704589](Data Structures & Algorithm.assets/image-20231119205704589.png)
+![image-20231119205704589](DataStructuresAlgorithm.assets/image-20231119205704589.png)
 
 - LL型
 
- ![image-20231119205839593](Data Structures & Algorithm.assets/image-20231119205839593.png)	调整后：	![image-20231119205856987](Data Structures & Algorithm.assets/image-20231119205856987.png)
+ ![image-20231119205839593](DataStructuresAlgorithm.assets/image-20231119205839593.png)	调整后：	![image-20231119205856987](DataStructuresAlgorithm.assets/image-20231119205856987.png)
 
 > B结点带左子树a一起上升
 >
@@ -3269,7 +3269,7 @@ void DeleteBST(BSTree& T, int key) {
 
 - RR型
 
- ![image-20231119210012135](Data Structures & Algorithm.assets/image-20231119210012135.png)调整后：![image-20231119210054183](Data Structures & Algorithm.assets/image-20231119210054183.png)
+ ![image-20231119210012135](DataStructuresAlgorithm.assets/image-20231119210012135.png)调整后：![image-20231119210054183](DataStructuresAlgorithm.assets/image-20231119210054183.png)
 
 > B结点带右子树B一起上升
 >
@@ -3281,7 +3281,7 @@ void DeleteBST(BSTree& T, int key) {
 
 - LR型
 
-  ![image-20231119210655227](Data Structures & Algorithm.assets/image-20231119210655227.png)调整后：<img src="Data Structures & Algorithm.assets/image-20231119210752533.png" alt="image-20231119210752533" style="zoom:85%;" />
+  ![image-20231119210655227](DataStructuresAlgorithm.assets/image-20231119210655227.png)调整后：<img src="DataStructuresAlgorithm.assets/image-20231119210752533.png" alt="image-20231119210752533" style="zoom:85%;" />
 
 > C结点穿过A、B结点上升
 >
@@ -3293,7 +3293,7 @@ void DeleteBST(BSTree& T, int key) {
 
 - RL型
 
-![image-20231119211212691](Data Structures & Algorithm.assets/image-20231119211212691.png)
+![image-20231119211212691](DataStructuresAlgorithm.assets/image-20231119211212691.png)
 
 ​		同理
 
@@ -3361,7 +3361,7 @@ void DeleteBST(BSTree& T, int key) {
 
 - 直接定址法
 
-![image-20231127161331498](Data Structures & Algorithm.assets/image-20231127161331498.png)
+![image-20231127161331498](DataStructuresAlgorithm.assets/image-20231127161331498.png)
 
 - 除留余数法
 
@@ -3369,7 +3369,7 @@ Hash(key)=key mod p
 
 > 设表长为m，p≤m且p为质数
 
-![image-20231127161722297](Data Structures & Algorithm.assets/image-20231127161722297.png)
+![image-20231127161722297](DataStructuresAlgorithm.assets/image-20231127161722297.png)
 
 #### 处理冲突的方法
 
@@ -3384,7 +3384,7 @@ Hash(key)=key mod p
    根据d的不同，分为以下方法：
    线性探测法、二次探测法、伪随机探测法
 
-   ![image-20231127162205835](Data Structures & Algorithm.assets/image-20231127162205835.png)
+   ![image-20231127162205835](DataStructuresAlgorithm.assets/image-20231127162205835.png)
 
 2. 链地址法 （拉链法）
 
@@ -3397,13 +3397,13 @@ Hash(key)=key mod p
 
 例:：关键码集为{47，7，29，11，16，92，22，8，3}，散列表的表长为m=11；散列函数为Hash(key)=key mod 11；拟用线性探测法处理冲突，建散列表如下：
 
-![image-20231127163029962](Data Structures & Algorithm.assets/image-20231127163029962.png)
+![image-20231127163029962](DataStructuresAlgorithm.assets/image-20231127163029962.png)
 
 > ASL=(1+2+1+1+1+4+1+2+2)/9=1.67
 
 - 链地址法例
 
-![image-20231127195211207](Data Structures & Algorithm.assets/image-20231127195211207.png)
+![image-20231127195211207](DataStructuresAlgorithm.assets/image-20231127195211207.png)
 
 > 优点：
 >
@@ -3449,13 +3449,13 @@ Hash(key)=key mod p
   - 内部排序
   - 外部排序
 
-> <img src="Data Structures & Algorithm.assets/image-20231122155636464.png" alt="image-20231122155636464" style="zoom:67%;" />
+> <img src="DataStructuresAlgorithm.assets/image-20231122155636464.png" alt="image-20231122155636464" style="zoom:67%;" />
 
 - 按比较器个数
   - 串行排序
   - 并行排序
 
-> <img src="Data Structures & Algorithm.assets/image-20231122155729675.png" alt="image-20231122155729675" style="zoom:67%;" />
+> <img src="DataStructuresAlgorithm.assets/image-20231122155729675.png" alt="image-20231122155729675" style="zoom:67%;" />
 
 - 按主要操作
   - 比较排序
@@ -3469,13 +3469,13 @@ Hash(key)=key mod p
   - 原地排序
   - 非原地排序
 
-> <img src="Data Structures & Algorithm.assets/image-20231122160033415.png" alt="image-20231122160033415" style="zoom:67%;" />
+> <img src="DataStructuresAlgorithm.assets/image-20231122160033415.png" alt="image-20231122160033415" style="zoom:67%;" />
 
 - 按稳定性
   - 稳定排序
   - 非稳定排序
 
-> <img src="Data Structures & Algorithm.assets/image-20231122160113059.png" alt="image-20231122160113059" style="zoom:67%;" />
+> <img src="DataStructuresAlgorithm.assets/image-20231122160113059.png" alt="image-20231122160113059" style="zoom:67%;" />
 >
 > 排序的稳定性只对结构类型数据排序有意义
 > 例如：
@@ -3493,7 +3493,7 @@ Hash(key)=key mod p
   - 自然排序
   - 非自然排序
 
-> <img src="Data Structures & Algorithm.assets/image-20231122160454858.png" alt="image-20231122160454858" style="zoom:67%;" />
+> <img src="DataStructuresAlgorithm.assets/image-20231122160454858.png" alt="image-20231122160454858" style="zoom:67%;" />
 
 
 
@@ -3503,7 +3503,7 @@ Hash(key)=key mod p
 
 > 即边插入边排序，保证子序列中随时都是排好序的
 
-<img src="Data Structures & Algorithm.assets/image-20231122161302359.png" alt="image-20231122161302359" style="zoom:67%;" />
+<img src="DataStructuresAlgorithm.assets/image-20231122161302359.png" alt="image-20231122161302359" style="zoom:67%;" />
 
 #### 基本操作
 
@@ -3515,7 +3515,7 @@ Hash(key)=key mod p
 
 #### 分类
 
-<img src="Data Structures & Algorithm.assets/image-20231122161713391.png" alt="image-20231122161713391" style="zoom:80%;" />
+<img src="DataStructuresAlgorithm.assets/image-20231122161713391.png" alt="image-20231122161713391" style="zoom:80%;" />
 
 #### 直接插入排序
 
@@ -3537,13 +3537,13 @@ void InsertSort(SqList& L) {
 
 最好情况：
 
-<img src="Data Structures & Algorithm.assets/image-20231122164925133.png" alt="image-20231122164925133" style="zoom:80%;" />
+<img src="DataStructuresAlgorithm.assets/image-20231122164925133.png" alt="image-20231122164925133" style="zoom:80%;" />
 
 > 每个元素仅需和前面的元素进行比较，第1个元素不用比，第2个和第1个比，第3个和第2个比······，不用复制到哨兵位置，即不用移动
 
 最坏情况：
 
-<img src="Data Structures & Algorithm.assets/image-20231122165202153.png" alt="image-20231122165202153" style="zoom:80%;" />
+<img src="DataStructuresAlgorithm.assets/image-20231122165202153.png" alt="image-20231122165202153" style="zoom:80%;" />
 
 > 比较：每一个元素（从2号位开始）都要和前面的所有元素进行比较，还要和哨兵进行比较。
 >
@@ -3576,9 +3576,9 @@ void BInsertSort(SqList& L) {
 
 
 
-<img src="Data Structures & Algorithm.assets/image-20231122192423999.png" alt="image-20231122192423999" style="zoom:80%;" />
+<img src="DataStructuresAlgorithm.assets/image-20231122192423999.png" alt="image-20231122192423999" style="zoom:80%;" />
 
-<img src="Data Structures & Algorithm.assets/image-20231122192525167.png" alt="image-20231122192525167" style="zoom:80%;" />
+<img src="DataStructuresAlgorithm.assets/image-20231122192525167.png" alt="image-20231122192525167" style="zoom:80%;" />
 
 > 时间复杂度：O(n^2)
 >
@@ -3594,7 +3594,7 @@ void BInsertSort(SqList& L) {
 
 例如：
 
-![image-20231122193639620](Data Structures & Algorithm.assets/image-20231122193639620.png)
+![image-20231122193639620](DataStructuresAlgorithm.assets/image-20231122193639620.png)
 
 ```c++
 void ShellInsert(SqList& L,int dk) {
@@ -3617,7 +3617,7 @@ void ShellSort(SqList& L, int dlta[], int t) {
 }
 ```
 
- <img src="Data Structures & Algorithm.assets/image-20231122195628265.png" alt="image-20231122195628265" style="zoom: 67%;" /><img src="Data Structures & Algorithm.assets/image-20231122200137461.png" alt="image-20231122200137461" style="zoom: 67%;" />
+ <img src="DataStructuresAlgorithm.assets/image-20231122195628265.png" alt="image-20231122195628265" style="zoom: 67%;" /><img src="DataStructuresAlgorithm.assets/image-20231122200137461.png" alt="image-20231122200137461" style="zoom: 67%;" />
 
 
 
@@ -3636,9 +3636,9 @@ void ShellSort(SqList& L, int dlta[], int t) {
 
 ​		基本思想：每趟不断将记录两两比较，并按“前小后大” 规则交换
 
-![image-20231125141726670](Data Structures & Algorithm.assets/image-20231125141726670.png)
+![image-20231125141726670](DataStructuresAlgorithm.assets/image-20231125141726670.png)
 
-![image-20231125141750825](Data Structures & Algorithm.assets/image-20231125141750825.png)
+![image-20231125141750825](DataStructuresAlgorithm.assets/image-20231125141750825.png)
 
 > 第一趟，6个元素都参与比较，要比较5次
 >
@@ -3696,7 +3696,7 @@ void BubbleSort(SqList& L) {
 
 算法分析：
 
-![image-20231125142950135](Data Structures & Algorithm.assets/image-20231125142950135.png)
+![image-20231125142950135](DataStructuresAlgorithm.assets/image-20231125142950135.png)
 
 > 每一次比较，如果符合要移动的情况，需要移动三次：
 >
@@ -3788,7 +3788,7 @@ void QSort(SqList& L, int low, int high) {//对顺序表L进行快速排序
 
 
 
-![image-20231125151400286](Data Structures & Algorithm.assets/image-20231125151400286.png)
+![image-20231125151400286](DataStructuresAlgorithm.assets/image-20231125151400286.png)
 
 > - 划分元素的选取是影响时间性能的关键
 > - 输入数据次序越乱，所选划分元素值的随机性越好，排序速度越快，快速排序不是自然排序方法。
@@ -3826,15 +3826,15 @@ void SelectSort(SqList& L) {
 
 - 算法分析
 
-![image-20231125153755386](Data Structures & Algorithm.assets/image-20231125153755386.png)
+![image-20231125153755386](DataStructuresAlgorithm.assets/image-20231125153755386.png)
 
-![image-20231125153819787](Data Structures & Algorithm.assets/image-20231125153819787.png)
+![image-20231125153819787](DataStructuresAlgorithm.assets/image-20231125153819787.png)
 
 
 
 #### 堆排序
 
-![image-20231125154935109](Data Structures & Algorithm.assets/image-20231125154935109.png)
+![image-20231125154935109](DataStructuresAlgorithm.assets/image-20231125154935109.png)
 
 ​		若在输出堆顶的最小值 (最大值) 后，使得剩余n-1个元素的序列重又建成一个堆，则得到n个元素的次小值 (次大值) ......如此反复，便能得到一个有序序列，这个过程称之为**堆排序**。
 
@@ -3883,11 +3883,11 @@ void HeapAdjust(SqList& L, int s, int m) {
 
 例如：
 
-![image-20231125164506259](Data Structures & Algorithm.assets/image-20231125164506259.png)
+![image-20231125164506259](DataStructuresAlgorithm.assets/image-20231125164506259.png)
 
 调整后：
 
-![image-20231125164605500](Data Structures & Algorithm.assets/image-20231125164605500.png)
+![image-20231125164605500](DataStructuresAlgorithm.assets/image-20231125164605500.png)
 
 ```c++
 //算法实现
@@ -3946,7 +3946,7 @@ void HeapSort(SqList& L) {
 
 例如：
 
-![image-20231125195452218](Data Structures & Algorithm.assets/image-20231125195452218.png)
+![image-20231125195452218](DataStructuresAlgorithm.assets/image-20231125195452218.png)
 
 
 
@@ -3960,11 +3960,11 @@ void HeapSort(SqList& L) {
 
 例：
 
-​	![image-20231206225525976](Data Structures & Algorithm.assets/image-20231206225525976.png)
+​	![image-20231206225525976](DataStructuresAlgorithm.assets/image-20231206225525976.png)
 
 > 上树称之为**归并树**，趟数为树的高度，整个归并排序仅需要**log~2~n**趟
 
-![image-20231207160001479](Data Structures & Algorithm.assets/image-20231207160001479.png)
+![image-20231207160001479](DataStructuresAlgorithm.assets/image-20231207160001479.png)
 
 ```c++
 /*这个函数的作用是：
@@ -4025,11 +4025,11 @@ void merge(ElemType A[],int low,int mid,int high){
 
 例：
 
-<img src="Data Structures & Algorithm.assets/image-20231207161356040.png" alt="image-20231207161356040" style="zoom:80%;" />
+<img src="DataStructuresAlgorithm.assets/image-20231207161356040.png" alt="image-20231207161356040" style="zoom:80%;" />
 
-<img src="Data Structures & Algorithm.assets/image-20231207161432659.png" alt="image-20231207161432659" style="zoom:80%;" />
+<img src="DataStructuresAlgorithm.assets/image-20231207161432659.png" alt="image-20231207161432659" style="zoom:80%;" />
 
-<img src="Data Structures & Algorithm.assets/image-20231207161512042.png" alt="image-20231207161512042" style="zoom:80%;" />
+<img src="DataStructuresAlgorithm.assets/image-20231207161512042.png" alt="image-20231207161512042" style="zoom:80%;" />
 
 **算法效率分析：**
 
@@ -4040,7 +4040,7 @@ void merge(ElemType A[],int low,int mid,int high){
 
 ### 8.7 各种排序方法比较
 
-![image-20231207163243373](Data Structures & Algorithm.assets/image-20231207163243373.png)
+![image-20231207163243373](DataStructuresAlgorithm.assets/image-20231207163243373.png)
 
 不稳定的排序：希尔排序、堆排序、选择排序、快速排序
 
