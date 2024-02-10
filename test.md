@@ -2,7 +2,7 @@
 
 ## This is a test
 
-![image-20240210171532741](test.assets/image-20240210171532741.png)
+<img src="test.assets/image-20240210171532741.png" alt="image-20240210171532741" style="zoom:50%;" />
 
 #### 上面是一张图片
 
